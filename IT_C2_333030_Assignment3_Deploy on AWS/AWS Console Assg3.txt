@@ -1,0 +1,373 @@
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+14 package(s) needed for security, out of 14 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-53-116 ~]$ sudo su-
+sudo: su-: command not found
+[ec2-user@ip-172-31-53-116 ~]$ sudo su -
+[root@ip-172-31-53-116 ~]# yum update -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package curl.x86_64 0:7.79.1-7.amzn2.0.1 will be updated
+---> Package curl.x86_64 0:7.87.0-2.amzn2.0.1 will be an update
+---> Package libblkid.x86_64 0:2.30.2-2.amzn2.0.10 will be updated
+---> Package libblkid.x86_64 0:2.30.2-2.amzn2.0.11 will be an update
+---> Package libcurl.x86_64 0:7.79.1-7.amzn2.0.1 will be updated
+---> Package libcurl.x86_64 0:7.87.0-2.amzn2.0.1 will be an update
+---> Package libfdisk.x86_64 0:2.30.2-2.amzn2.0.10 will be updated
+---> Package libfdisk.x86_64 0:2.30.2-2.amzn2.0.11 will be an update
+---> Package libmount.x86_64 0:2.30.2-2.amzn2.0.10 will be updated
+---> Package libmount.x86_64 0:2.30.2-2.amzn2.0.11 will be an update
+---> Package libsmartcols.x86_64 0:2.30.2-2.amzn2.0.10 will be updated
+---> Package libsmartcols.x86_64 0:2.30.2-2.amzn2.0.11 will be an update
+---> Package libuuid.x86_64 0:2.30.2-2.amzn2.0.10 will be updated
+---> Package libuuid.x86_64 0:2.30.2-2.amzn2.0.11 will be an update
+---> Package sysstat.x86_64 0:10.1.5-18.amzn2.0.1 will be updated
+---> Package sysstat.x86_64 0:10.1.5-18.amzn2.0.2 will be an update
+---> Package util-linux.x86_64 0:2.30.2-2.amzn2.0.10 will be updated
+---> Package util-linux.x86_64 0:2.30.2-2.amzn2.0.11 will be an update
+---> Package vim-common.x86_64 2:9.0.1006-1.amzn2.0.1 will be updated
+---> Package vim-common.x86_64 2:9.0.1160-1.amzn2.0.1 will be an update
+---> Package vim-data.noarch 2:9.0.1006-1.amzn2.0.1 will be updated
+---> Package vim-data.noarch 2:9.0.1160-1.amzn2.0.1 will be an update
+---> Package vim-enhanced.x86_64 2:9.0.1006-1.amzn2.0.1 will be updated
+---> Package vim-enhanced.x86_64 2:9.0.1160-1.amzn2.0.1 will be an update
+---> Package vim-filesystem.noarch 2:9.0.1006-1.amzn2.0.1 will be updated
+---> Package vim-filesystem.noarch 2:9.0.1160-1.amzn2.0.1 will be an update
+---> Package vim-minimal.x86_64 2:9.0.1006-1.amzn2.0.1 will be updated
+---> Package vim-minimal.x86_64 2:9.0.1160-1.amzn2.0.1 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+============================================================================================================================================================================
+ Package                                   Arch                              Version                                            Repository                             Size
+============================================================================================================================================================================
+Updating:
+ curl                                      x86_64                            7.87.0-2.amzn2.0.1                                 amzn2-core                            396 k
+ libblkid                                  x86_64                            2.30.2-2.amzn2.0.11                                amzn2-core                            191 k
+ libcurl                                   x86_64                            7.87.0-2.amzn2.0.1                                 amzn2-core                            334 k
+ libfdisk                                  x86_64                            2.30.2-2.amzn2.0.11                                amzn2-core                            238 k
+ libmount                                  x86_64                            2.30.2-2.amzn2.0.11                                amzn2-core                            213 k
+ libsmartcols                              x86_64                            2.30.2-2.amzn2.0.11                                amzn2-core                            155 k
+ libuuid                                   x86_64                            2.30.2-2.amzn2.0.11                                amzn2-core                             80 k
+ sysstat                                   x86_64                            10.1.5-18.amzn2.0.2                                amzn2-core                            318 k
+ util-linux                                x86_64                            2.30.2-2.amzn2.0.11                                amzn2-core                            2.3 M
+ vim-common                                x86_64                            2:9.0.1160-1.amzn2.0.1                             amzn2-core                            7.9 M
+ vim-data                                  noarch                            2:9.0.1160-1.amzn2.0.1                             amzn2-core                             78 k
+ vim-enhanced                              x86_64                            2:9.0.1160-1.amzn2.0.1                             amzn2-core                            1.6 M
+ vim-filesystem                            noarch                            2:9.0.1160-1.amzn2.0.1                             amzn2-core                             73 k
+ vim-minimal                               x86_64                            2:9.0.1160-1.amzn2.0.1                             amzn2-core                            737 k
+
+Transaction Summary
+============================================================================================================================================================================
+Upgrade  14 Packages
+
+Total download size: 15 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(1/14): libblkid-2.30.2-2.amzn2.0.11.x86_64.rpm                                                                                                      | 191 kB  00:00:00     
+(2/14): curl-7.87.0-2.amzn2.0.1.x86_64.rpm                                                                                                           | 396 kB  00:00:00     
+(3/14): libcurl-7.87.0-2.amzn2.0.1.x86_64.rpm                                                                                                        | 334 kB  00:00:00     
+(4/14): libfdisk-2.30.2-2.amzn2.0.11.x86_64.rpm                                                                                                      | 238 kB  00:00:00     
+(5/14): libmount-2.30.2-2.amzn2.0.11.x86_64.rpm                                                                                                      | 213 kB  00:00:00     
+(6/14): libsmartcols-2.30.2-2.amzn2.0.11.x86_64.rpm                                                                                                  | 155 kB  00:00:00     
+(7/14): libuuid-2.30.2-2.amzn2.0.11.x86_64.rpm                                                                                                       |  80 kB  00:00:00     
+(8/14): sysstat-10.1.5-18.amzn2.0.2.x86_64.rpm                                                                                                       | 318 kB  00:00:00     
+(9/14): util-linux-2.30.2-2.amzn2.0.11.x86_64.rpm                                                                                                    | 2.3 MB  00:00:00     
+(10/14): vim-data-9.0.1160-1.amzn2.0.1.noarch.rpm                                                                                                    |  78 kB  00:00:00     
+(11/14): vim-common-9.0.1160-1.amzn2.0.1.x86_64.rpm                                                                                                  | 7.9 MB  00:00:00     
+(12/14): vim-enhanced-9.0.1160-1.amzn2.0.1.x86_64.rpm                                                                                                | 1.6 MB  00:00:00     
+(13/14): vim-filesystem-9.0.1160-1.amzn2.0.1.noarch.rpm                                                                                              |  73 kB  00:00:00     
+(14/14): vim-minimal-9.0.1160-1.amzn2.0.1.x86_64.rpm                                                                                                 | 737 kB  00:00:00     
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                        39 MB/s |  15 MB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : libuuid-2.30.2-2.amzn2.0.11.x86_64                                                                                                                      1/28 
+  Updating   : libblkid-2.30.2-2.amzn2.0.11.x86_64                                                                                                                     2/28 
+  Updating   : 2:vim-data-9.0.1160-1.amzn2.0.1.noarch                                                                                                                  3/28 
+  Updating   : libfdisk-2.30.2-2.amzn2.0.11.x86_64                                                                                                                     4/28 
+  Updating   : libmount-2.30.2-2.amzn2.0.11.x86_64                                                                                                                     5/28 
+  Updating   : 2:vim-filesystem-9.0.1160-1.amzn2.0.1.noarch                                                                                                            6/28 
+  Updating   : 2:vim-common-9.0.1160-1.amzn2.0.1.x86_64                                                                                                                7/28 
+  Updating   : libcurl-7.87.0-2.amzn2.0.1.x86_64                                                                                                                       8/28 
+  Updating   : libsmartcols-2.30.2-2.amzn2.0.11.x86_64                                                                                                                 9/28 
+  Updating   : util-linux-2.30.2-2.amzn2.0.11.x86_64                                                                                                                  10/28 
+  Updating   : curl-7.87.0-2.amzn2.0.1.x86_64                                                                                                                         11/28 
+  Updating   : 2:vim-enhanced-9.0.1160-1.amzn2.0.1.x86_64                                                                                                             12/28 
+  Updating   : 2:vim-minimal-9.0.1160-1.amzn2.0.1.x86_64                                                                                                              13/28 
+  Updating   : sysstat-10.1.5-18.amzn2.0.2.x86_64                                                                                                                     14/28 
+  Cleanup    : util-linux-2.30.2-2.amzn2.0.10.x86_64                                                                                                                  15/28 
+  Cleanup    : libfdisk-2.30.2-2.amzn2.0.10.x86_64                                                                                                                    16/28 
+  Cleanup    : libmount-2.30.2-2.amzn2.0.10.x86_64                                                                                                                    17/28 
+  Cleanup    : libblkid-2.30.2-2.amzn2.0.10.x86_64                                                                                                                    18/28 
+  Cleanup    : curl-7.79.1-7.amzn2.0.1.x86_64                                                                                                                         19/28 
+  Cleanup    : 2:vim-minimal-9.0.1006-1.amzn2.0.1.x86_64                                                                                                              20/28 
+  Cleanup    : 2:vim-enhanced-9.0.1006-1.amzn2.0.1.x86_64                                                                                                             21/28 
+  Cleanup    : 2:vim-common-9.0.1006-1.amzn2.0.1.x86_64                                                                                                               22/28 
+  Cleanup    : 2:vim-data-9.0.1006-1.amzn2.0.1.noarch                                                                                                                 23/28 
+  Cleanup    : 2:vim-filesystem-9.0.1006-1.amzn2.0.1.noarch                                                                                                           24/28 
+  Cleanup    : libcurl-7.79.1-7.amzn2.0.1.x86_64                                                                                                                      25/28 
+  Cleanup    : libuuid-2.30.2-2.amzn2.0.10.x86_64                                                                                                                     26/28 
+  Cleanup    : libsmartcols-2.30.2-2.amzn2.0.10.x86_64                                                                                                                27/28 
+  Cleanup    : sysstat-10.1.5-18.amzn2.0.1.x86_64                                                                                                                     28/28 
+  Verifying  : libuuid-2.30.2-2.amzn2.0.11.x86_64                                                                                                                      1/28 
+  Verifying  : 2:vim-enhanced-9.0.1160-1.amzn2.0.1.x86_64                                                                                                              2/28 
+  Verifying  : 2:vim-minimal-9.0.1160-1.amzn2.0.1.x86_64                                                                                                               3/28 
+  Verifying  : 2:vim-data-9.0.1160-1.amzn2.0.1.noarch                                                                                                                  4/28 
+  Verifying  : libsmartcols-2.30.2-2.amzn2.0.11.x86_64                                                                                                                 5/28 
+  Verifying  : sysstat-10.1.5-18.amzn2.0.2.x86_64                                                                                                                      6/28 
+  Verifying  : util-linux-2.30.2-2.amzn2.0.11.x86_64                                                                                                                   7/28 
+  Verifying  : libfdisk-2.30.2-2.amzn2.0.11.x86_64                                                                                                                     8/28 
+  Verifying  : libmount-2.30.2-2.amzn2.0.11.x86_64                                                                                                                     9/28 
+  Verifying  : libcurl-7.87.0-2.amzn2.0.1.x86_64                                                                                                                      10/28 
+  Verifying  : libblkid-2.30.2-2.amzn2.0.11.x86_64                                                                                                                    11/28 
+  Verifying  : curl-7.87.0-2.amzn2.0.1.x86_64                                                                                                                         12/28 
+  Verifying  : 2:vim-filesystem-9.0.1160-1.amzn2.0.1.noarch                                                                                                           13/28 
+  Verifying  : 2:vim-common-9.0.1160-1.amzn2.0.1.x86_64                                                                                                               14/28 
+  Verifying  : sysstat-10.1.5-18.amzn2.0.1.x86_64                                                                                                                     15/28 
+  Verifying  : 2:vim-data-9.0.1006-1.amzn2.0.1.noarch                                                                                                                 16/28 
+  Verifying  : libfdisk-2.30.2-2.amzn2.0.10.x86_64                                                                                                                    17/28 
+  Verifying  : libcurl-7.79.1-7.amzn2.0.1.x86_64                                                                                                                      18/28 
+  Verifying  : 2:vim-enhanced-9.0.1006-1.amzn2.0.1.x86_64                                                                                                             19/28 
+  Verifying  : 2:vim-common-9.0.1006-1.amzn2.0.1.x86_64                                                                                                               20/28 
+  Verifying  : curl-7.79.1-7.amzn2.0.1.x86_64                                                                                                                         21/28 
+  Verifying  : libmount-2.30.2-2.amzn2.0.10.x86_64                                                                                                                    22/28 
+  Verifying  : libuuid-2.30.2-2.amzn2.0.10.x86_64                                                                                                                     23/28 
+  Verifying  : libsmartcols-2.30.2-2.amzn2.0.10.x86_64                                                                                                                24/28 
+  Verifying  : 2:vim-filesystem-9.0.1006-1.amzn2.0.1.noarch                                                                                                           25/28 
+  Verifying  : 2:vim-minimal-9.0.1006-1.amzn2.0.1.x86_64                                                                                                              26/28 
+  Verifying  : util-linux-2.30.2-2.amzn2.0.10.x86_64                                                                                                                  27/28 
+  Verifying  : libblkid-2.30.2-2.amzn2.0.10.x86_64                                                                                                                    28/28 
+
+Updated:
+  curl.x86_64 0:7.87.0-2.amzn2.0.1             libblkid.x86_64 0:2.30.2-2.amzn2.0.11     libcurl.x86_64 0:7.87.0-2.amzn2.0.1    libfdisk.x86_64 0:2.30.2-2.amzn2.0.11     
+  libmount.x86_64 0:2.30.2-2.amzn2.0.11        libsmartcols.x86_64 0:2.30.2-2.amzn2.0.11 libuuid.x86_64 0:2.30.2-2.amzn2.0.11   sysstat.x86_64 0:10.1.5-18.amzn2.0.2      
+  util-linux.x86_64 0:2.30.2-2.amzn2.0.11      vim-common.x86_64 2:9.0.1160-1.amzn2.0.1  vim-data.noarch 2:9.0.1160-1.amzn2.0.1 vim-enhanced.x86_64 2:9.0.1160-1.amzn2.0.1
+  vim-filesystem.noarch 2:9.0.1160-1.amzn2.0.1 vim-minimal.x86_64 2:9.0.1160-1.amzn2.0.1
+
+Complete!
+[root@ip-172-31-53-116 ~]# yum install -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.54-1.amzn2 will be installed
+--> Processing Dependency: httpd-tools = 2.4.54-1.amzn2 for package: httpd-2.4.54-1.amzn2.x86_64
+--> Processing Dependency: httpd-filesystem = 2.4.54-1.amzn2 for package: httpd-2.4.54-1.amzn2.x86_64
+--> Processing Dependency: system-logos-httpd for package: httpd-2.4.54-1.amzn2.x86_64
+--> Processing Dependency: mod_http2 for package: httpd-2.4.54-1.amzn2.x86_64
+--> Processing Dependency: httpd-filesystem for package: httpd-2.4.54-1.amzn2.x86_64
+--> Processing Dependency: /etc/mime.types for package: httpd-2.4.54-1.amzn2.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.4.54-1.amzn2.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.4.54-1.amzn2.x86_64
+--> Running transaction check
+---> Package apr.x86_64 0:1.7.0-9.amzn2 will be installed
+---> Package apr-util.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+--> Processing Dependency: apr-util-bdb(x86-64) = 1.6.1-5.amzn2.0.2 for package: apr-util-1.6.1-5.amzn2.0.2.x86_64
+---> Package generic-logos-httpd.noarch 0:18.0.0-4.amzn2 will be installed
+---> Package httpd-filesystem.noarch 0:2.4.54-1.amzn2 will be installed
+---> Package httpd-tools.x86_64 0:2.4.54-1.amzn2 will be installed
+---> Package mailcap.noarch 0:2.1.41-2.amzn2 will be installed
+---> Package mod_http2.x86_64 0:1.15.19-1.amzn2.0.1 will be installed
+--> Running transaction check
+---> Package apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+============================================================================================================================================================================
+ Package                                       Arch                             Version                                          Repository                            Size
+============================================================================================================================================================================
+Installing:
+ httpd                                         x86_64                           2.4.54-1.amzn2                                   amzn2-core                           1.4 M
+Installing for dependencies:
+ apr                                           x86_64                           1.7.0-9.amzn2                                    amzn2-core                           122 k
+ apr-util                                      x86_64                           1.6.1-5.amzn2.0.2                                amzn2-core                            99 k
+ apr-util-bdb                                  x86_64                           1.6.1-5.amzn2.0.2                                amzn2-core                            19 k
+ generic-logos-httpd                           noarch                           18.0.0-4.amzn2                                   amzn2-core                            19 k
+ httpd-filesystem                              noarch                           2.4.54-1.amzn2                                   amzn2-core                            24 k
+ httpd-tools                                   x86_64                           2.4.54-1.amzn2                                   amzn2-core                            88 k
+ mailcap                                       noarch                           2.1.41-2.amzn2                                   amzn2-core                            31 k
+ mod_http2                                     x86_64                           1.15.19-1.amzn2.0.1                              amzn2-core                           149 k
+
+Transaction Summary
+============================================================================================================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 1.9 M
+Installed size: 5.2 M
+Downloading packages:
+(1/9): apr-1.7.0-9.amzn2.x86_64.rpm                                                                                                                  | 122 kB  00:00:00     
+(2/9): apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64.rpm                                                                                                     |  19 kB  00:00:00     
+(3/9): generic-logos-httpd-18.0.0-4.amzn2.noarch.rpm                                                                                                 |  19 kB  00:00:00     
+(4/9): httpd-2.4.54-1.amzn2.x86_64.rpm                                                                                                               | 1.4 MB  00:00:00     
+(5/9): httpd-filesystem-2.4.54-1.amzn2.noarch.rpm                                                                                                    |  24 kB  00:00:00     
+(6/9): httpd-tools-2.4.54-1.amzn2.x86_64.rpm                                                                                                         |  88 kB  00:00:00     
+(7/9): mailcap-2.1.41-2.amzn2.noarch.rpm                                                                                                             |  31 kB  00:00:00     
+(8/9): mod_http2-1.15.19-1.amzn2.0.1.x86_64.rpm                                                                                                      | 149 kB  00:00:00     
+(9/9): apr-util-1.6.1-5.amzn2.0.2.x86_64.rpm                                                                                                         |  99 kB  00:00:00     
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                       5.7 MB/s | 1.9 MB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : apr-1.7.0-9.amzn2.x86_64                                                                                                                                 1/9 
+  Installing : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                                                                                                                    2/9 
+  Installing : apr-util-1.6.1-5.amzn2.0.2.x86_64                                                                                                                        3/9 
+  Installing : httpd-tools-2.4.54-1.amzn2.x86_64                                                                                                                        4/9 
+  Installing : httpd-filesystem-2.4.54-1.amzn2.noarch                                                                                                                   5/9 
+  Installing : generic-logos-httpd-18.0.0-4.amzn2.noarch                                                                                                                6/9 
+  Installing : mailcap-2.1.41-2.amzn2.noarch                                                                                                                            7/9 
+  Installing : mod_http2-1.15.19-1.amzn2.0.1.x86_64                                                                                                                     8/9 
+  Installing : httpd-2.4.54-1.amzn2.x86_64                                                                                                                              9/9 
+  Verifying  : apr-util-1.6.1-5.amzn2.0.2.x86_64                                                                                                                        1/9 
+  Verifying  : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                                                                                                                    2/9 
+  Verifying  : httpd-tools-2.4.54-1.amzn2.x86_64                                                                                                                        3/9 
+  Verifying  : mod_http2-1.15.19-1.amzn2.0.1.x86_64                                                                                                                     4/9 
+  Verifying  : httpd-2.4.54-1.amzn2.x86_64                                                                                                                              5/9 
+  Verifying  : mailcap-2.1.41-2.amzn2.noarch                                                                                                                            6/9 
+  Verifying  : generic-logos-httpd-18.0.0-4.amzn2.noarch                                                                                                                7/9 
+  Verifying  : httpd-filesystem-2.4.54-1.amzn2.noarch                                                                                                                   8/9 
+  Verifying  : apr-1.7.0-9.amzn2.x86_64                                                                                                                                 9/9 
+
+Installed:
+  httpd.x86_64 0:2.4.54-1.amzn2                                                                                                                                             
+
+Dependency Installed:
+  apr.x86_64 0:1.7.0-9.amzn2                 apr-util.x86_64 0:1.6.1-5.amzn2.0.2   apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2   generic-logos-httpd.noarch 0:18.0.0-4.amzn2  
+  httpd-filesystem.noarch 0:2.4.54-1.amzn2   httpd-tools.x86_64 0:2.4.54-1.amzn2   mailcap.noarch 0:2.1.41-2.amzn2           mod_http2.x86_64 0:1.15.19-1.amzn2.0.1       
+
+Complete!
+[root@ip-172-31-53-116 ~]# systemctl status httpd
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+     Docs: man:httpd.service(8)
+[root@ip-172-31-53-116 ~]# mkdir aws_assg3
+[root@ip-172-31-53-116 ~]# cd aws_assg3
+[root@ip-172-31-53-116 aws_assg3]# wget https://github.com/Shreyas100100/ShreyasKulkarni_Portfolio.git
+--2023-02-04 14:44:20--  https://github.com/Shreyas100100/ShreyasKulkarni_Portfolio.git
+Resolving github.com (github.com)... 140.82.114.4
+Connecting to github.com (github.com)|140.82.114.4|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://github.com/Shreyas100100/ShreyasKulkarni_Portfolio [following]
+--2023-02-04 14:44:20--  https://github.com/Shreyas100100/ShreyasKulkarni_Portfolio
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘ShreyasKulkarni_Portfolio.git’
+
+    [ <=>                                                                                                                               ] 169,529     --.-K/s   in 0.01s   
+
+2023-02-04 14:44:20 (15.2 MB/s) - ‘ShreyasKulkarni_Portfolio.git’ saved [169529]
+
+[root@ip-172-31-53-116 aws_assg3]# ls -lrt
+total 168
+-rw-r--r-- 1 root root 169529 Feb  4 14:44 ShreyasKulkarni_Portfolio.git
+[root@ip-172-31-53-116 aws_assg3]# wget https://github.com/Shreyas100100/ShreyasKulkarni_Portfolio/archive/refs/heads/master.zip
+--2023-02-04 14:44:49--  https://github.com/Shreyas100100/ShreyasKulkarni_Portfolio/archive/refs/heads/master.zip
+Resolving github.com (github.com)... 140.82.114.4
+Connecting to github.com (github.com)|140.82.114.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/Shreyas100100/ShreyasKulkarni_Portfolio/zip/refs/heads/master [following]
+--2023-02-04 14:44:49--  https://codeload.github.com/Shreyas100100/ShreyasKulkarni_Portfolio/zip/refs/heads/master
+Resolving codeload.github.com (codeload.github.com)... 140.82.113.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.113.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/zip]
+Saving to: ‘master.zip’
+
+    [ <=>                                                                                                                               ] 619,972     --.-K/s   in 0.1s    
+
+2023-02-04 14:44:49 (5.57 MB/s) - ‘master.zip’ saved [619972]
+
+[root@ip-172-31-53-116 aws_assg3]# ls -lrt
+total 776
+-rw-r--r-- 1 root root 169529 Feb  4 14:44 ShreyasKulkarni_Portfolio.git
+-rw-r--r-- 1 root root 619972 Feb  4 14:44 master.zip
+[root@ip-172-31-53-116 aws_assg3]# unzip master.zip
+Archive:  master.zip
+2ecff0e09ea6ef30f94569bab9f08feff8542ba0
+   creating: ShreyasKulkarni_Portfolio-master/
+   creating: ShreyasKulkarni_Portfolio-master/css/
+   creating: ShreyasKulkarni_Portfolio-master/css/colors/
+  inflating: ShreyasKulkarni_Portfolio-master/css/colors/blue.css  
+  inflating: ShreyasKulkarni_Portfolio-master/css/colors/blue.css.map  
+  inflating: ShreyasKulkarni_Portfolio-master/css/colors/green.css  
+  inflating: ShreyasKulkarni_Portfolio-master/css/colors/green.css.map  
+  inflating: ShreyasKulkarni_Portfolio-master/css/colors/red.css  
+  inflating: ShreyasKulkarni_Portfolio-master/css/colors/red.css.map  
+  inflating: ShreyasKulkarni_Portfolio-master/css/colors/yellow.css  
+  inflating: ShreyasKulkarni_Portfolio-master/css/colors/yellow.css.map  
+  inflating: ShreyasKulkarni_Portfolio-master/css/dark.css  
+  inflating: ShreyasKulkarni_Portfolio-master/css/dark.css.map  
+  inflating: ShreyasKulkarni_Portfolio-master/css/style.css  
+  inflating: ShreyasKulkarni_Portfolio-master/css/style.css.map  
+  inflating: ShreyasKulkarni_Portfolio-master/index.html  
+   creating: ShreyasKulkarni_Portfolio-master/js/
+  inflating: ShreyasKulkarni_Portfolio-master/js/script.js  
+   creating: ShreyasKulkarni_Portfolio-master/plugins/
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/animate.css  
+   creating: ShreyasKulkarni_Portfolio-master/plugins/bootstrap/
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/bootstrap/bootstrap.min.css  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/bootstrap/bootstrap.min.js  
+   creating: ShreyasKulkarni_Portfolio-master/plugins/isotope/
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/isotope/isotope.pkgd.min.js  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/jquery-2.2.4.min.js  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/jquery.nicescroll.min.js  
+   creating: ShreyasKulkarni_Portfolio-master/plugins/slick/
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/slick/README.markdown  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/slick/ajax-loader.gif  
+   creating: ShreyasKulkarni_Portfolio-master/plugins/slick/fonts/
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/slick/fonts/slick.eot  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/slick/fonts/slick.svg  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/slick/fonts/slick.ttf  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/slick/fonts/slick.woff  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/slick/slick-theme.css  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/slick/slick.css  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/slick/slick.min.js  
+   creating: ShreyasKulkarni_Portfolio-master/plugins/themefisher-fonts/
+   creating: ShreyasKulkarni_Portfolio-master/plugins/themefisher-fonts/css/
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/themefisher-fonts/css/themefisher-fonts.min.css  
+   creating: ShreyasKulkarni_Portfolio-master/plugins/themefisher-fonts/fonts/
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/themefisher-fonts/fonts/themefisher-font.eot  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/themefisher-fonts/fonts/themefisher-font.svg  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/themefisher-fonts/fonts/themefisher-font.ttf  
+  inflating: ShreyasKulkarni_Portfolio-master/plugins/themefisher-fonts/fonts/themefisher-font.woff  
+[root@ip-172-31-53-116 aws_assg3]# ls -lrt
+total 776
+drwxr-xr-x 5 root root     60 Feb  4 14:33 ShreyasKulkarni_Portfolio-master
+-rw-r--r-- 1 root root 169529 Feb  4 14:44 ShreyasKulkarni_Portfolio.git
+-rw-r--r-- 1 root root 619972 Feb  4 14:44 master.zip
+[root@ip-172-31-53-116 aws_assg3]# cd ShreyasKulkarni_Portfolio-master
+[root@ip-172-31-53-116 ShreyasKulkarni_Portfolio-master]# ls -lrt
+total 12
+drwxr-xr-x 6 root root   154 Feb  4 14:33 plugins
+drwxr-xr-x 2 root root    23 Feb  4 14:33 js
+-rw-r--r-- 1 root root 10607 Feb  4 14:33 index.html
+drwxr-xr-x 3 root root    94 Feb  4 14:33 css
+[root@ip-172-31-53-116 ShreyasKulkarni_Portfolio-master]# mv * /var/www/html/
+[root@ip-172-31-53-116 ShreyasKulkarni_Portfolio-master]# cd /var/www/html
+[root@ip-172-31-53-116 html]# ls -lrt
+total 12
+drwxr-xr-x 6 root root   154 Feb  4 14:33 plugins
+drwxr-xr-x 2 root root    23 Feb  4 14:33 js
+-rw-r--r-- 1 root root 10607 Feb  4 14:33 index.html
+drwxr-xr-x 3 root root    94 Feb  4 14:33 css
+[root@ip-172-31-53-116 html]# systemctl status httpd
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+     Docs: man:httpd.service(8)
+[root@ip-172-31-53-116 html]# systemctl enable httpd
+Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
+[root@ip-172-31-53-116 html]# systemctl start httpd
